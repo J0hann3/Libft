@@ -6,13 +6,15 @@
 /*   By: jvigny <johanne.vgn@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 13:51:26 by jvigny            #+#    #+#             */
-/*   Updated: 2022/10/15 13:51:50 by jvigny           ###   ########.fr       */
+/*   Updated: 2022/10/19 11:42:04 by jvigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memset(void *s, int c, size_t n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)

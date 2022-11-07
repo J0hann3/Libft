@@ -9,8 +9,9 @@
 /*   Updated: 2022/10/15 13:32:21 by jvigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	res;
 	int	i;
@@ -19,12 +20,12 @@ int	atoi(const char *str)
 	res = 0;
 	i = 0;
 	sign = 1;
-	while (str[i] == " " || str[i] == "\f" || str[i] == "\r" || str[i] == "\n"
-		||str[i] == "\t" || str[i] == "\v")
+	while (str[i] == ' ' || str[i] == '\f' || str[i] == '\r' || str[i] == '\n'
+		||str[i] == '\t' || str[i] == '\v')
 		i++;
-	if (str[i] == "-" || str[i] == "+")
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == "-")
+		if (str[i] == '-')
 			sign = -1;
 		i++;
 	}

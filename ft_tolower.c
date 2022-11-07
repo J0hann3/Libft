@@ -9,8 +9,9 @@
 /*   Updated: 2022/10/15 13:54:21 by jvigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c <= 'A' || c >= 'Z')
 		return (c + 32);

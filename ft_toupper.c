@@ -9,8 +9,9 @@
 /*   Updated: 2022/10/15 13:54:45 by jvigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c <= 'a' || c >= 'z')
 		return (c - 32);
