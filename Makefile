@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jvigny <johanne.vgn@gmail.com>             +#+  +:+       +#+         #
+#    By: jvigny <jvigny@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/14 16:13:05 by jvigny            #+#    #+#              #
-#    Updated: 2022/10/14 16:13:05 by jvigny           ###   ########.fr        #
+#    Updated: 2022/11/14 11:36:12 by jvigny           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,12 +43,22 @@ SRCS = ft_isalpha.c \
 		ft_putchar_fd.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
-		ft_putnbr_fd.c \
+		ft_putnbr_fd.c
 
-OBJ =	${SRCS: .c = .o}
-HEADER =	libft.h
+BONUS = ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c
+
+OBJ =	${SRCS:.c=.o}
+OBJ_BONUS = ${BONUS:.c=.o}
 NAME =	libft.a
-FLAGS =	-Wall -Werror -Wextra -I${HEADER}
+FLAGS =	-Wall -Werror -Wextra -I.
 CC =	cc
 
 all:	${NAME}
@@ -56,11 +66,14 @@ all:	${NAME}
 ${NAME}:	${OBJ}
 	ar rcs ${NAME} ${OBJ}
 
+bonus:	${OBJ_BONUS} ${OBJ}
+	ar rcs ${NAME} ${OBJ_BONUS} ${OBJ}
+
 %.o:	%.c
 	${CC} ${FLAGS} -c -o $@ $<
 
 clean:
-	rm -f ${OBJ}
+	rm -f ${OBJ} ${OBJ_BONUS}
 
 fclean:	clean
 	rm -f ${NAME}
@@ -68,4 +81,3 @@ fclean:	clean
 re:	fclean all
 
 .PHONY:	all re clean fclean 
-
