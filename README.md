@@ -7,7 +7,13 @@
 [Subject Libft Project 42](https://cdn.intra.42.fr/pdf/pdf/105471/en.subject.pdf)
 
 ### Makefile
-`make` compile all the functions to create a library **libft.a**  
+
+```
+git clone https://github.com/J0hann3/Libft.git
+cd Libft
+make
+```
+`make` compile all the mandatory functions to create a library **libft.a**  
 `make bonus` compile although the linked chain functions
 
 ---
