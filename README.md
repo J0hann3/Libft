@@ -10,30 +10,31 @@ This project is about coding a C library from scratch.
 ---
 ## Libft Functions
 
-- `isalpha`
-- `isdigit`
-- `isalnum`
-- `isascii`
-- `isprint`
-- `strlen`
-- `memset`
-- `bzero`
-- `memcpy`
-- `memmove`
-- `srtlcpy`
-- `strlcat`
-- `toupper`
-- `tolower`
-- `strchr`
-- `strrchr`
-- `strncmp`
-- `memchr`
-- `memcmp`
-- `strnstr`
-- `atoi`
-
-- `calloc`
-- `strdup`
+### Libc functions
+- `ft_isalpha`
+- `ft_isdigit`
+- `ft_isalnum`
+- `ft_isascii`
+- `ft_isprint`
+- `ft_strlen`
+- `ft_memset`
+- `ft_bzero`
+- `ft_memcpy`
+- `ft_memmove`
+- `ft_srtlcpy`
+- `ft_strlcat`
+- `ft_toupper`
+- `ft_tolower`
+- `ft_strchr`
+- `ft_strrchr`
+- `ft_strncmp`
+- `ft_memchr`
+- `ft_memcmp`
+- `ft_strnstr`
+- `ft_atoi`
+- `ft_calloc`
+- `ft_strdup`
+### Other functions
 - `ft_substr`
 - `ft_strjoin`
 - `ft_strtrim`
@@ -45,7 +46,7 @@ This project is about coding a C library from scratch.
 - `ft_putstr_fd`
 - `ft_putendl_fd`
 - `ft_putnbr_fd`
-
+### Bonus functions
 - `ft_lstnew`
 - `ft_lstadd_front`
 - `ft_lstsize`
