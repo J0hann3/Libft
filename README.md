@@ -1,7 +1,10 @@
 # Libft
-[Subject Libft Project 42](https://cdn.intra.42.fr/pdf/pdf/105471/en.subject.pdf)
 
-This project is about coding a C library from scratch.
+## About
+>This project is about coding a C library.
+>It will contain a lot of general purpose functions your programs will rely upon.
+
+[Subject Libft Project 42](https://cdn.intra.42.fr/pdf/pdf/105471/en.subject.pdf)
 
 ### Makefile
 `make` compile all the functions to create a library **libft.a**  
