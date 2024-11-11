@@ -1,4 +1,7 @@
-# Libft
+<h1 align=center>💻 Libft</h1>
+<p align="center">
+  <img src="img/libft.png?raw=true"/>
+</p>
 
 ## About
 >This project is about coding a C library.
@@ -6,7 +9,7 @@
 
 [Subject Libft Project 42](libft.pdf)
 
-### Makefile
+## Setup
 
 ```
 git clone https://github.com/J0hann3/Libft.git
@@ -14,7 +17,7 @@ cd Libft
 make
 ```
 `make` compile all the mandatory functions to create a library **libft.a**  
-`make bonus` compile although the linked chain functions
+`make bonus` compile although the bonus functions which are using linked chain
 
 ---
 ## Libft Functions
